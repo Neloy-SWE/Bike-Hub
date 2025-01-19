@@ -8,9 +8,8 @@ class AppStrings {
   static const String fontBold = "bold";
   static const String fontRegular = "regular";
   static const String welcome = "Welcome";
-  static const String yourBikeAdminApp = "Your Bike Admin App";
-  static const String allBikeList = "All Bike List";
-  static const String addNewBike = "Add New Bike";
+  static const String bikes = "Bikes";
+  static const String addRequest = "Add Request";
   static const String addBikeImage = "Add Bike Image";
   static const String changeBikeImage = "Change Bike Image";
   static const String tapToSeeEditDetails = "Tap To See/Edit Details";
@@ -84,6 +83,7 @@ class AppStrings {
   static const String sameNameWillNotAcceptable =
       "Same name will not acceptable";
   static const String close = "Close";
+  static const String retry = "Retry";
   static const String add = "Add";
   static const String pleaseSelectImage = "Please select image!";
   static const String addNewBikeRequest = "Add New Bike Request";
