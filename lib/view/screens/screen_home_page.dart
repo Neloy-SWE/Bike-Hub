@@ -11,6 +11,7 @@ import 'package:bike_hub/view/utilities/values/app_image_path.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../../managers/manager_bike_details.dart';
 import '../utilities/components/custom_Dialogue.dart';
 import '../utilities/components/custom_text_field.dart';
 import '../utilities/values/app_size.dart';
@@ -128,13 +129,10 @@ class _HomePageScreenState extends State<HomePageScreen> {
       children: [
         GestureDetector(
           onTap: () {
-            // Navigator.of(context).push(
-            //   MaterialPageRoute(
-            //     builder: (builder) => BikeDetails(
-            //       id: bike.id!,
-            //     ),
-            //   ),
-            // );
+            BikeDetailsManager.getInstance(
+              context: context,
+              id: bike.id!,
+            ).connection();
           },
           child: Container(
             height: 180,

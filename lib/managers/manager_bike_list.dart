@@ -25,22 +25,21 @@ class BikeListManager {
   }
 
   Future<void> connection() async {
-
-    try{
+    try {
       String result = await GetAllBikesAPI().run();
       if (result != ConstantValues.error) {
         BaseModel baseModel = BaseModel.fromJson(result);
         if (baseModel.status == ConstantValues.success) {
-          bikes =
-              baseModel.data.map<BikeModel>((e) => BikeModel.fromMap(e)).toList();
+          bikes = baseModel.data
+              .map<BikeModel>((e) => BikeModel.fromMap(e))
+              .toList();
 
           Navigator.of(_context!).pushReplacement(
             MaterialPageRoute(
               builder: (builder) => const HomePageScreen(),
             ),
           );
-        }
-        else{
+        } else {
           CustomDialogue.simple(
             context: _context!,
             onPressed: () {
@@ -52,8 +51,7 @@ class BikeListManager {
           );
         }
       }
-    }
-    on Exception catch (e) {
+    } on Exception {
       CustomDialogue.simple(
         context: _context!,
         onPressed: () {
