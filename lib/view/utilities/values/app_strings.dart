@@ -17,6 +17,7 @@ class AppStrings {
   static const String selectCC = "Select CC";
   static const String bikeDetails = "Bike Details";
   static const String name = "Name";
+  static const String modelName = "Model Name";
   static const String phone = "Phone";
   static const String phoneHint = "015.....";
   static const String password = "Password";

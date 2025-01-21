@@ -7,6 +7,7 @@ import 'dart:convert';
 
 import 'package:bike_hub/managers/manager_bike_list.dart';
 import 'package:bike_hub/network/models/model_bike.dart';
+import 'package:bike_hub/view/screens/scrren_add_new_bike_request.dart';
 import 'package:bike_hub/view/utilities/values/app_image_path.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -69,11 +70,11 @@ class _HomePageScreenState extends State<HomePageScreen> {
             ),
           ),
           onPressed: () {
-            // Navigator.of(context).push(
-            //   MaterialPageRoute(
-            //     builder: (builder) => const AddBike(),
-            //   ),
-            // );
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (builder) => const AddNewBikeRequestScreen(),
+              ),
+            );
           },
           color: Colors.black,
           child: Text(

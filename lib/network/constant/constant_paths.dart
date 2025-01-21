@@ -8,4 +8,5 @@ class ConstantPaths{
   static const String prefix = "api/yourBike/";
   static const String getAllBikes = "${prefix}GetAllBikes";
   static const String getSingleBike = "${prefix}GetSingleBike";
+  static const String addNewBikeRequest = "${prefix}AddNewBikeRequest";
 }
