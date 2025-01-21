@@ -1,16 +1,36 @@
-# bike_hub
+# Bike Hub
 
-A new Flutter project.
+A simple flutter application for an admin user that will be used for show, add, update & delete
+operations for bikes.
 
-## Getting Started
+## Tools and Technologies:
 
-This project is a starting point for a Flutter application.
+1. Framework: flutter-3.22.2
+2. Programming language: dart-3.4.3
+3. IDE: android studio-koala | 2024.1.1
 
-A few resources to get you started if this is your first Flutter project:
+## Packages:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. http: ^0.13.6
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features:
+
+1. bike list
+2. bike details
+3. request for add new bike
+
+**backend project repository link:** https://github.com/Neloy-SWE/Your-Bike-User-Backend
+
+to run the flutter app, you need to setup the backend first. you may find details about the backend
+project in it's **readme.md** file.
+
+## Screenshots:
+
+<p float="left">
+  <img src="screenshots/1.splash.jpg" width="200" />
+  <img src="screenshots/2.home.jpg" width="200" />
+  <img src="screenshots/3.details.jpg" width="200" />
+  <img src="screenshots/4.addnotif.jpg" width="200" />
+  <img src="screenshots/5.loader.jpg" width="200" />
+  <img src="screenshots/6.done.jpg" width="200" />
+  <img src="screenshots/7.exit.jpg" width="200" />

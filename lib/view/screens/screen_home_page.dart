@@ -174,7 +174,7 @@ class _HomePageScreenState extends State<HomePageScreen> {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     Text(
-                      bike.brandName!,
+                      bike.name!,
                       style: Theme.of(context).textTheme.titleLarge!.copyWith(
                             fontSize: 20,
                           ),

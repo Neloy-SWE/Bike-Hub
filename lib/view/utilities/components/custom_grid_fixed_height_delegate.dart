@@ -5,8 +5,7 @@
 
 import 'package:flutter/rendering.dart';
 
-class CustomGridFixedHeightDelegate
-    extends SliverGridDelegate {
+class CustomGridFixedHeightDelegate extends SliverGridDelegate {
   /// Creates a delegate that makes grid layouts with a fixed number of tiles in
   /// the cross axis.
   ///
@@ -18,10 +17,10 @@ class CustomGridFixedHeightDelegate
     this.mainAxisSpacing = 0.0,
     this.crossAxisSpacing = 0.0,
     this.height = 56.0,
-  })  : assert(crossAxisCount != null && crossAxisCount > 0),
-        assert(mainAxisSpacing != null && mainAxisSpacing >= 0),
-        assert(crossAxisSpacing != null && crossAxisSpacing >= 0),
-        assert(height != null && height > 0);
+  })  : assert(crossAxisCount > 0),
+        assert(mainAxisSpacing >= 0),
+        assert(crossAxisSpacing >= 0),
+        assert(height > 0);
 
   /// The number of children in the cross axis.
   final int crossAxisCount;
@@ -61,12 +60,10 @@ class CustomGridFixedHeightDelegate
   }
 
   @override
-  bool shouldRelayout(
-      CustomGridFixedHeightDelegate oldDelegate) {
+  bool shouldRelayout(CustomGridFixedHeightDelegate oldDelegate) {
     return oldDelegate.crossAxisCount != crossAxisCount ||
         oldDelegate.mainAxisSpacing != mainAxisSpacing ||
         oldDelegate.crossAxisSpacing != crossAxisSpacing ||
         oldDelegate.height != height;
   }
 }
-

@@ -6,8 +6,6 @@
 class ConstantValues {
   static const String requestPost = "POST";
   static const String requestGet = "GET";
-  static const String requestPut = "PUT";
-  static const String requestDelete = "DELETE";
   static const String contentType = "Content-Type";
   static const String applicationJson = "application/json";
   static const String accept = "Accept";
